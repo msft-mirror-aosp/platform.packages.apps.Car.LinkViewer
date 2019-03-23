@@ -28,7 +28,7 @@
         app:title="@string/app_name"/>
 
     <TextView
-        style="@style/TextAppearance.Car.Body1"
+        style="?android:attr/textAppearanceLarge"
         android:id="@+id/url_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
