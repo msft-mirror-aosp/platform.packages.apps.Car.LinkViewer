@@ -34,6 +34,8 @@ LOCAL_CERTIFICATE := platform
 
 LOCAL_PRIVILEGED_MODULE := false
 
+LOCAL_JAVA_LIBRARIES += android.car
+
 LOCAL_STATIC_ANDROID_LIBRARIES += \
     androidx.car_car \
     car-theme-lib
