@@ -35,8 +35,7 @@ LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := false
 
 LOCAL_STATIC_ANDROID_LIBRARIES += \
-    androidx.car_car \
-    car-theme-lib
+    car-ui-lib
 
 LOCAL_STATIC_JAVA_LIBRARIES += \
     zxing-core-1.7
