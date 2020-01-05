@@ -32,6 +32,8 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_CERTIFICATE := platform
 
+LOCAL_PROGUARD_ENABLED := disabled
+
 LOCAL_PRIVILEGED_MODULE := false
 
 LOCAL_JAVA_LIBRARIES += android.car
