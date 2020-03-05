@@ -27,13 +27,16 @@ android_app {
 
     certificate: "platform",
 
+    optimize: {
+        enabled: false,
+    },
+
     privileged: false,
 
     libs: ["android.car"],
 
     static_libs: [
-        "androidx.car_car",
-        "car-theme-lib",
+        "car-ui-lib",
         "zxing-core-1.7",
     ],
 }
