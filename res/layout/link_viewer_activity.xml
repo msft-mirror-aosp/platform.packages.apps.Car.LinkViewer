@@ -21,11 +21,12 @@
     android:layout_height="match_parent"
     android:background="@android:color/black">
 
-    <androidx.car.widget.CarToolbar
+    <com.android.car.ui.toolbar.Toolbar
         android:id="@+id/car_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/app_name"/>
+        app:title="@string/app_name"
+        app:state="subpage"/>
 
     <TextView
         style="?android:attr/textAppearanceLarge"
@@ -45,5 +46,6 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="40dp"
         android:scaleType="fitCenter"
-        android:layout_centerHorizontal="true" />
+        android:tint="?android:attr/textColorPrimary"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
