@@ -17,6 +17,9 @@
 
 package com.android.car.linkviewer;
 
+import static com.android.car.ui.core.CarUi.requireToolbar;
+import static com.android.car.ui.toolbar.Toolbar.State.SUBPAGE;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -26,6 +29,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.android.car.ui.toolbar.ToolbarController;
 
 import com.google.zxing.WriterException;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
@@ -47,6 +52,10 @@ public class LinkViewerActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ToolbarController toolbar = requireToolbar(this);
+        toolbar.setTitle(R.string.app_name);
+        toolbar.setState(SUBPAGE);
 
         String url = getUrlFromIntent(getIntent());
         if (url == null) {
