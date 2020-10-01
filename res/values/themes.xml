@@ -15,5 +15,5 @@
 -->
 <resources>
     <!-- The theme for the LinkViewerActivity. -->
-    <style name="AppTheme" parent="Theme.CarUi"/>
+    <style name="AppTheme" parent="Theme.CarUi.WithToolbar"/>
 </resources>
